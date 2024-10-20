@@ -47,8 +47,11 @@ namespace CsharpProject
             Car[] mass = new Car[2];
             mass[0] = new Car("Toyota Camry", 2002, 198);
             mass[1] = new Car("Kia Rio", 2000, 202);
-            CarCatalor catalor = new CarCatalor(mass);
+            CarCatalor catalog = new CarCatalor(mass);
+            foreach (var item in catalog)
+            {
 
+            }
             //Console.WriteLine(catalor.GetEnumeratorProductionYear(2000));
             //catalor.GetEnumeratorreverce();
             //catalor.GetEnumerator();
@@ -128,7 +131,7 @@ namespace CsharpProject
             this.massiv = massiv;
         }
 
-        public IEnumerator<Car> GetEnumerator() {
+        public IEnumerator<Car> GetEnumerator() {//
             foreach (Car car in massiv) 
             {
                 car.Print();

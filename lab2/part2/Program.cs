@@ -65,6 +65,7 @@ namespace CsharpProject
 
         }
         public override void Print() {
+          
             Console.WriteLine("X: {0} Y: {1} high: {2}", x, y,high);
             Console.WriteLine("Value of Plane: {0}", value);
             Console.WriteLine("Speed of Plane: {0}", speed);
