@@ -1,94 +1,94 @@
 using System;
-using System.Text.Json;
+using System.Collections.Generic;
+using System.Net.Http;
+using System.Threading.Tasks;
+using Newtonsoft.Json.Linq;
+using System.Linq;
+using System.Xml.Linq;
 
-struct Weather
+
+public struct Weather
 {
     public string Country { get; set; }
     public string Name { get; set; }
-    public double Temp { get; set; }
+    public float Temp { get; set; }
     public string Description { get; set; }
 
-    public Weather(string country, string name, double temp, string desc)
+
+    public void Print()
     {
-        Country = country;
-        Name = name;
-        Temp = temp;
-        Description = desc;
+        Console.WriteLine($"{Country}");
+        Console.WriteLine($"{Name}");
+        Console.WriteLine($"{Temp}");
+        Console.WriteLine($"{Description}");
     }
-
-
-    public override string ToString()
-    {
-        return Country;
-    }
-
 }
 
-
-public class Programm
+class Program
 {
-    private static HttpClient client = new HttpClient();
-    private const string api = "e530339d0b2f2f9e4140b2dda1013d41";
-    public static async Task Main()
+    private static readonly HttpClient client = new HttpClient();
+    private const string apiKey = "2d4e25e79f07ed7508618c0200d01ce6";
+
+    static async Task Main(string[] args)
     {
+        var weathers = new List<Weather>();
+        var random = new Random();
 
-        List<Weather> weateeeerrrr = new List<Weather>();
-        Random randemor = new Random();
-        while (weateeeerrrr.Count < 50)
+        while (weathers.Count < 50)
         {
-            double shirota = randemor.NextDouble() * 180 - 90;
-            double dolgota = randemor.NextDouble() * 360 - 180;
-            Console.WriteLine("query was send");
-            Weather dobaveit = await GetPoluchRandWeather(shirota, dolgota);
-            Console.WriteLine("query get");
-            weateeeerrrr.Add(dobaveit);
+            double lat = random.NextDouble() * 180 - 90;
+            double lon = random.NextDouble() * 360 - 180;
 
+            var weather = await GetWeatherAsync(lat, lon);
+            if (weather != null)
+            {
+                weathers.Add(weather.Value);
+            }
         }
 
-        foreach (var iiii in weateeeerrrr)
+        var maxTempCountry = weathers.OrderByDescending(w => w.Temp).First();
+        var minTempCountry = weathers.OrderBy(w => w.Temp).First();
+        var averageTemp = weathers.Average(w => w.Temp);
+        var countryCount = weathers.Select(w => w.Country).Distinct().Count();
+        var specificDescription = weathers.FirstOrDefault(w =>
+            w.Description == "clear sky" ||
+            w.Description == "rain" ||
+            w.Description == "few clouds");
+
+        Console.WriteLine($"Страна с максимальной температурой: {maxTempCountry.Country} ({maxTempCountry.Temp}°C)");
+        Console.WriteLine($"Страна с минимальной температурой: {minTempCountry.Country} ({minTempCountry.Temp}°C)");
+        Console.WriteLine($"Средняя температура в мире: {averageTemp}°C");
+        Console.WriteLine($"Количество стран в коллекции: {countryCount}");
+        if (specificDescription.Name != null)
         {
-            Console.WriteLine(iiii.ToString());
+            Console.WriteLine($"Первая найденная страна и местность с описанием: {specificDescription.Country}, {specificDescription.Name}");
         }
-
-        var maxtemparerert = weateeeerrrr.Max(elew => elew.Temp);
-        var nemaxtemparerert = weateeeerrrr.Min(elew => elew.Temp);
-        var srednayatemp = weateeeerrrr.Average(elew => elew.Temp);
-
-        var countrycnt = weateeeerrrr.Select(elew => elew.Country).Distinct().Count();
-
-        var clereclerk = weateeeerrrr.FirstOrDefault(elew => elew.Description == "clear sky");
-
-        var clereclerk22 = weateeeerrrr.FirstOrDefault(elew => elew.Description == "rain");
-
-
-
-        var clereclerk44 = weateeeerrrr.FirstOrDefault(elew => elew.Description == "few clouds");
-
-
+        else
+        {
+            Console.WriteLine("Не найдено местностей с описанием 'clear sky', 'rain' или 'few clouds'.");
+        }
+        foreach (var item in weathers)
+        {
+            item.Print();
+        }
     }
 
-    private static async Task<Weather> GetPoluchRandWeather(double shirota, double dolgota)
+    private static async Task<Weather?> GetWeatherAsync(double lat, double lon)
     {
-        string tudazapr = $"https://api.openweathermap.org/data/2.5/weather?lat={shirota}&lon={dolgota}&appid={api}";
-        var resppoluchin = await client.GetStringAsync(tudazapr);
+        var response = await client.GetStringAsync($"https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={apiKey}&units=metric");
+        var json = JObject.Parse(response);
 
-        JsonDocument aaaaoooo = JsonDocument.Parse(resppoluchin);
-        var root = aaaaoooo.RootElement;
-        if (root.TryGetProperty("sys", out JsonElement strana) && root.TryGetProperty("name", out JsonElement imyagoroda))
+        if (json["sys"] != null && json["name"] != null)
         {
-            //string coco = strana.GetProperty("country").ToString() ;
-            root.TryGetProperty("main", out JsonElement maintemp);
-            double tempdlyastruct = maintemp.GetProperty("temp").GetDouble();
-            root.TryGetProperty("weather", out JsonElement weatherr);
-            string opisaniepogodiii = weatherr[0].GetProperty("description").ToString();
-            Weather reusultreturin = new Weather(strana.ToString(), strana.ToString(), tempdlyastruct, opisaniepogodiii);
-            return reusultreturin;
-
+            return new Weather
+            {
+                Country = (string)json["sys"]["country"],
+                Name = (string)json["name"],
+                Temp = (float)json["main"]["temp"],
+                Description = (string)json["weather"][0]["description"]
+            };
         }
 
-
-        return default;
+        return null;
     }
-
-
 }
