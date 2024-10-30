@@ -31,6 +31,39 @@ class Program
 
     static async Task Main(string[] args)
     {
+
+        string filePath = "city.txt";
+
+        // Чтение файла
+        string[] lines = File.ReadAllLines(filePath);
+
+        // Цикл по строкам
+        for (int i = 0; i < lines.Length; i++)
+        {
+            // Разделение строки на 3 объекта
+            string[] parts = lines[i].Split(' ');
+
+            // Проверка, что в строке 3 объекта
+            if (parts.Length != 3)
+            {
+                Console.WriteLine($"Ошибка: В строке {i + 1} недостаточно данных.");
+                continue;
+            }
+
+            // Создание структуры City и заполнение полей
+            cities[i].city = parts[0];
+            cities[i].latitude = double.Parse(parts[1]);
+            cities[i].longitude = double.Parse(parts[2]);
+        }
+
+        // Теперь у вас есть массив структур City с данными из файла
+        // Используйте этот массив для дальнейшей работы
+        foreach (City city in cities)
+        {
+            Console.WriteLine($"Город: {city.city}, Широта: {city.latitude}, Долгота: {city.longitude}");
+        }
+
+
         var weathers = new List<Weather>();
         var random = new Random();
 
