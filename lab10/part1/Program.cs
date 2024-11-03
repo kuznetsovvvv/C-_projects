@@ -29,11 +29,13 @@ namespace CSharpProject
         public string? date { get; set; }
         public string? ticker { get; set; }
     }
+
     public class Ticker
     {
         public int Id { get; set; }
         public string? ticker { get; set; }
     }
+
     public class TodaysCondition
     {
         public int Id { get; set; }
