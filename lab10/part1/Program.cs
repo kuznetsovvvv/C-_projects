@@ -96,7 +96,7 @@ namespace CSharpProject
             {
                 using HttpClient client = new();
 
-                string url = $"https://api.marketdata.app/v1/stocks/candles/D/{ticker}/?from=2023-11-04&to=2024-11-03&token=UmF5LW9nUDJoam9NdURSMFM0WXJpMm5JcDI1RWlsRWJUb1drRi03QzVOcz0";
+                string url = $"https://api.marketdata.app/v1/stocks/candles/D/{ticker}/?from=2023-11-16&to=2024-11-15&token=UmF5LW9nUDJoam9NdURSMFM0WXJpMm5JcDI1RWlsRWJUb1drRi03QzVOcz0";
 
                 HttpResponseMessage response = await client.GetAsync(url); string responseContent = await response.Content.ReadAsStringAsync();
                 dynamic responceObject = Newtonsoft.Json.JsonConvert.DeserializeObject(responseContent);

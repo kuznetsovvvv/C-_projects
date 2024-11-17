@@ -79,6 +79,13 @@ class Program
             }
         }
 
+
+
+        foreach (var item in weathers)
+        {
+            item.Print();
+        }
+
         var maxTempCountry = weathers.OrderByDescending(w => w.Temp).First();
         var minTempCountry = weathers.OrderBy(w => w.Temp).First();
         var averageTemp = weathers.Average(w => w.Temp);
@@ -99,10 +106,6 @@ class Program
         else
         {
             Console.WriteLine("Ќе найдено местностей с описанием 'clear sky', 'rain' или 'few clouds'.");
-        }
-        foreach (var item in weathers)
-        {
-            item.Print();
         }
     }
 
