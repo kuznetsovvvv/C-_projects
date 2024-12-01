@@ -1,0 +1,119 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\SQLServerWebApiConsoleClient\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9D7796EA-65C9-4675-B10B-182373E46243}|WebAPIClient\\WebAPIClient.csproj|c:\\users\\user\\desktop\\\u043D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\sqlserverwebapiconsoleclient\\webapiclient\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D7796EA-65C9-4675-B10B-182373E46243}|WebAPIClient\\WebAPIClient.csproj|solutionrelative:webapiclient\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00FCE117-3002-42E8-81D4-64794DEEF0F4}|SQLServerWebApiConsoleClient\\SQLServerWebApiConsoleClient.csproj|c:\\users\\user\\desktop\\\u043D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\sqlserverwebapiconsoleclient\\sqlserverwebapiconsoleclient\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00FCE117-3002-42E8-81D4-64794DEEF0F4}|SQLServerWebApiConsoleClient\\SQLServerWebApiConsoleClient.csproj|solutionrelative:sqlserverwebapiconsoleclient\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55AD4E1C-B1F9-4D66-B5DE-D1091144AB91}|WebAPIModels\\WebAPIModels.csproj|c:\\users\\user\\desktop\\\u043D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\sqlserverwebapiconsoleclient\\webapimodels\\models\\shipper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55AD4E1C-B1F9-4D66-B5DE-D1091144AB91}|WebAPIModels\\WebAPIModels.csproj|solutionrelative:webapimodels\\models\\shipper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00FCE117-3002-42E8-81D4-64794DEEF0F4}|SQLServerWebApiConsoleClient\\SQLServerWebApiConsoleClient.csproj|c:\\users\\user\\desktop\\\u043D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\sqlserverwebapiconsoleclient\\sqlserverwebapiconsoleclient\\repositories\\shipperrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00FCE117-3002-42E8-81D4-64794DEEF0F4}|SQLServerWebApiConsoleClient\\SQLServerWebApiConsoleClient.csproj|solutionrelative:sqlserverwebapiconsoleclient\\repositories\\shipperrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00FCE117-3002-42E8-81D4-64794DEEF0F4}|SQLServerWebApiConsoleClient\\SQLServerWebApiConsoleClient.csproj|c:\\users\\user\\desktop\\\u043D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\sqlserverwebapiconsoleclient\\sqlserverwebapiconsoleclient\\repositories\\ishipperrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00FCE117-3002-42E8-81D4-64794DEEF0F4}|SQLServerWebApiConsoleClient\\SQLServerWebApiConsoleClient.csproj|solutionrelative:sqlserverwebapiconsoleclient\\repositories\\ishipperrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00FCE117-3002-42E8-81D4-64794DEEF0F4}|SQLServerWebApiConsoleClient\\SQLServerWebApiConsoleClient.csproj|c:\\users\\user\\desktop\\\u043D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\sqlserverwebapiconsoleclient\\sqlserverwebapiconsoleclient\\controllers\\shippercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00FCE117-3002-42E8-81D4-64794DEEF0F4}|SQLServerWebApiConsoleClient\\SQLServerWebApiConsoleClient.csproj|solutionrelative:sqlserverwebapiconsoleclient\\controllers\\shippercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Shipper.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\SQLServerWebApiConsoleClient\\WebAPIModels\\Models\\Shipper.cs",
+              "RelativeDocumentMoniker": "WebAPIModels\\Models\\Shipper.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\SQLServerWebApiConsoleClient\\WebAPIModels\\Models\\Shipper.cs",
+              "RelativeToolTip": "WebAPIModels\\Models\\Shipper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T10:18:50.281Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\SQLServerWebApiConsoleClient\\WebAPIClient\\Program.cs",
+              "RelativeDocumentMoniker": "WebAPIClient\\Program.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\SQLServerWebApiConsoleClient\\WebAPIClient\\Program.cs",
+              "RelativeToolTip": "WebAPIClient\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T10:17:39.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ShipperRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\SQLServerWebApiConsoleClient\\SQLServerWebApiConsoleClient\\Repositories\\ShipperRepository.cs",
+              "RelativeDocumentMoniker": "SQLServerWebApiConsoleClient\\Repositories\\ShipperRepository.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\SQLServerWebApiConsoleClient\\SQLServerWebApiConsoleClient\\Repositories\\ShipperRepository.cs",
+              "RelativeToolTip": "SQLServerWebApiConsoleClient\\Repositories\\ShipperRepository.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T07:35:39.122Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IShipperRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\SQLServerWebApiConsoleClient\\SQLServerWebApiConsoleClient\\Repositories\\IShipperRepository.cs",
+              "RelativeDocumentMoniker": "SQLServerWebApiConsoleClient\\Repositories\\IShipperRepository.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\SQLServerWebApiConsoleClient\\SQLServerWebApiConsoleClient\\Repositories\\IShipperRepository.cs",
+              "RelativeToolTip": "SQLServerWebApiConsoleClient\\Repositories\\IShipperRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T07:35:39.122Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\SQLServerWebApiConsoleClient\\SQLServerWebApiConsoleClient\\Program.cs",
+              "RelativeDocumentMoniker": "SQLServerWebApiConsoleClient\\Program.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\SQLServerWebApiConsoleClient\\SQLServerWebApiConsoleClient\\Program.cs",
+              "RelativeToolTip": "SQLServerWebApiConsoleClient\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T07:35:39.122Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ShipperController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\SQLServerWebApiConsoleClient\\SQLServerWebApiConsoleClient\\Controllers\\ShipperController.cs",
+              "RelativeDocumentMoniker": "SQLServerWebApiConsoleClient\\Controllers\\ShipperController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\SQLServerWebApiConsoleClient\\SQLServerWebApiConsoleClient\\Controllers\\ShipperController.cs",
+              "RelativeToolTip": "SQLServerWebApiConsoleClient\\Controllers\\ShipperController.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAAAGoAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T07:35:39.122Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
